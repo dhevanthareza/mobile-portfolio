@@ -187,7 +187,6 @@ img    { display: block; }
   gap: 1px;
   border: 1px solid var(--border);
   border-radius: 2px;
-  max-width: 580px;
   overflow: hidden;
 }
 
