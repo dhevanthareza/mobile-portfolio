@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile App Portfolio — Dhevanthareza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Side nav dots -->
+  <nav class="nav-dots" aria-label="Slide navigation">
+    <button class="dot active" data-target="hero"      aria-label="Intro"></button>
+    <button class="dot"        data-target="cash4mail"  aria-label="Cash4Mail"></button>
+    <button class="dot"        data-target="oncodoc"   aria-label="OncoDoc"></button>
+    <button class="dot"        data-target="reconet"    aria-label="Reconet"></button>
+    <button class="dot"        data-target="presensiku" aria-label="Presensiku"></button>
+    <button class="dot"        data-target="contact"    aria-label="Contact"></button>
+  </nav>
+
+  <!-- Slide counter -->
+  <div class="counter" aria-live="polite">
+    <span class="c-cur">01</span>
+    <span class="c-sep">/</span>
+    <span class="c-tot">06</span>
+  </div>
+
+  <main class="deck" id="deck">
+
+    <!-- ━━━━━━━━━━━━━━ SLIDE 1  HERO ━━━━━━━━━━━━━━ -->
+    <section class="slide" id="hero">
+      <div class="inner">
+
+        <header class="site-header fade">
+          <span class="logo">DT</span>
+          <span class="header-role">Software Developer</span>
+        </header>
+
+        <div class="hero-body">
+          <h1 class="hero-title fade delay-1">
+            <span class="line">MOBILE APP</span>
+            <span class="line dim">PORTFOLIO</span>
+          </h1>
+
+          <div class="hero-byline fade delay-2">
+            <span class="byline-name">Dhevanthareza</span>
+            <span class="byline-dot">·</span>
+            <span class="byline-desc">Flutter Developer · Node.js Backend</span>
+          </div>
+
+          <p class="hero-sub fade delay-3">
+            End-to-end mobile applications built with Flutter,
+            shipped to the App Store and Google Play.
+          </p>
+
+          <div class="project-index fade delay-4">
+            <button class="pi-item" onclick="goTo('cash4mail')">
+              <span class="pi-num">01</span>
+              <span class="pi-name">Cash4Mail</span>
+              <span class="pi-cat">Business</span>
+              <span class="pi-arrow">↗</span>
+            </button>
+            <button class="pi-item" onclick="goTo('oncodoc')">
+              <span class="pi-num">02</span>
+              <span class="pi-name">OncoDoc</span>
+              <span class="pi-cat">Health &amp; Fitness</span>
+              <span class="pi-arrow">↗</span>
+            </button>
+            <button class="pi-item" onclick="goTo('reconet')">
+              <span class="pi-num">03</span>
+              <span class="pi-name">Reconet</span>
+              <span class="pi-cat">ISP Management</span>
+              <span class="pi-arrow">↗</span>
+            </button>
+            <button class="pi-item" onclick="goTo('presensiku')">
+              <span class="pi-num">04</span>
+              <span class="pi-name">Presensiku</span>
+              <span class="pi-cat">Productivity</span>
+              <span class="pi-arrow">↗</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="ticker-wrap fade delay-5" aria-hidden="true">
+          <div class="ticker">
+            <span>Flutter</span><span>·</span>
+            <span>Dart</span><span>·</span>
+            <span>Node.js</span><span>·</span>
+            <span>REST API</span><span>·</span>
+            <span>App Store Connect</span><span>·</span>
+            <span>Google Play</span><span>·</span>
+            <span>Firebase</span><span>·</span>
+            <span>State Management</span><span>·</span>
+            <span>Flutter</span><span>·</span>
+            <span>Dart</span><span>·</span>
+            <span>Node.js</span><span>·</span>
+            <span>REST API</span><span>·</span>
+            <span>App Store Connect</span><span>·</span>
+            <span>Google Play</span><span>·</span>
+            <span>Firebase</span><span>·</span>
+            <span>State Management</span><span>·</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━ SLIDE 2  CASH4MAIL ━━━━━━━━━━━━━━ -->
+    <section class="slide" id="cash4mail">
+      <div class="inner proj-inner">
+
+        <div class="proj-info-col">
+          <p class="proj-idx fade">01 / 03</p>
+          <h2 class="proj-title fade delay-1">Cash4Mail</h2>
+          <p class="proj-tag fade delay-2">Business · Flutter · Node.js</p>
+
+          <p class="proj-desc fade delay-3">
+            Built for <strong>DirectMail 2.0, LLC</strong> — a platform
+            that turns everyday marketing and junk mail into income.
+            Users photograph their received mail, submit it through the
+            app, and get paid ~$20–$30/month via PayPal once approved.
+          </p>
+
+          <ul class="feat-list fade delay-4">
+            <li>
+              <span class="fn">Guided scanning</span>
+              <span class="fv">Step-by-step mail capture &amp; submission flow</span>
+            </li>
+            <li>
+              <span class="fn">PayPal payouts</span>
+              <span class="fv">Payment sent after review &amp; approval</span>
+            </li>
+            <li>
+              <span class="fn">Smart notifications</span>
+              <span class="fv">Quick-access links to pending submissions</span>
+            </li>
+            <li>
+              <span class="fn">Masked PII</span>
+              <span class="fv">View approved submissions with protected data</span>
+            </li>
+          </ul>
+
+          <div class="proj-meta fade delay-5">
+            <div class="meta-pill">⭐ 5.0 Rating</div>
+            <div class="meta-pill">Flutter</div>
+            <div class="meta-pill">Node.js Backend</div>
+          </div>
+
+          <div class="store-row fade delay-6">
+            <a href="https://apps.apple.com/us/app/cash4mail/id6746123925"
+               target="_blank" rel="noopener noreferrer" class="store-link">
+              <!-- Apple icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.dm20.cashmail&hl=id"
+               target="_blank" rel="noopener noreferrer" class="store-link">
+              <!-- Play icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M3 20.5v-17c0-.83 1-.92 1.4-.42l13 8.5c.35.23.35.77 0 1L4.4 20.92C4 21.42 3 21.33 3 20.5z"/></svg>
+              Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- Cinema screenshots -->
+        <div class="cinema fade delay-2">
+          <div class="cinema-side cinema-left">
+            <img src="assets/cash4mail/460x998bb%20(2).webp" alt="Cash4Mail screen 3" />
+          </div>
+          <div class="cinema-main">
+            <img src="assets/cash4mail/460x998bb.webp" alt="Cash4Mail main screen" />
+          </div>
+          <div class="cinema-side cinema-right">
+            <img src="assets/cash4mail/460x998bb%20(1).webp" alt="Cash4Mail screen 2" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━ SLIDE 3  ONCODOC ━━━━━━━━━━━━━━ -->
+    <section class="slide" id="oncodoc">
+      <div class="inner proj-inner">
+
+        <div class="proj-info-col">
+          <p class="proj-idx fade">02 / 03</p>
+          <h2 class="proj-title fade delay-1">OncoDoc</h2>
+          <p class="proj-tag fade delay-2">Health &amp; Fitness · Flutter · Node.js</p>
+
+          <p class="proj-desc fade delay-3">
+            A collaboration between <strong>Perhompedin</strong> and
+            <strong>Udinus (PT. Dinustek)</strong> to help users perform
+            early cancer self-screening. Not a diagnostic tool —
+            results support awareness and guide users to consult a doctor
+            for proper medical decisions.
+          </p>
+
+          <ul class="feat-list fade delay-4">
+            <li>
+              <span class="fn">6 cancer types</span>
+              <span class="fv">Cervical · Lung · Lymphoma · Colon · Breast · Prostate</span>
+            </li>
+            <li>
+              <span class="fn">Expert-validated</span>
+              <span class="fv">Backed by hematology oncology expertise</span>
+            </li>
+            <li>
+              <span class="fn">Consultation</span>
+              <span class="fv">Real-time chat with certified professionals</span>
+            </li>
+            <li>
+              <span class="fn">Community forum</span>
+              <span class="fv">Open health discussions for all users</span>
+            </li>
+          </ul>
+
+          <div class="proj-meta fade delay-5">
+            <div class="meta-pill">⭐ 5.0 Rating</div>
+            <div class="meta-pill">Flutter</div>
+            <div class="meta-pill">Node.js Backend</div>
+          </div>
+
+          <div class="store-row fade delay-6">
+            <a href="https://play.google.com/store/apps/details?id=com.dinustek.oncodoc&hl=id"
+               target="_blank" rel="noopener noreferrer" class="store-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M3 20.5v-17c0-.83 1-.92 1.4-.42l13 8.5c.35.23.35.77 0 1L4.4 20.92C4 21.42 3 21.33 3 20.5z"/></svg>
+              Google Play
+            </a>
+            <a href="https://apps.apple.com/id/app/oncodoc/id6469251566"
+               target="_blank" rel="noopener noreferrer" class="store-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+          </div>
+        </div>
+
+        <!-- Cinema screenshots -->
+        <div class="cinema fade delay-2">
+          <div class="cinema-side cinema-left">
+            <img src="assets/oncodoc/unnamed%20(5).webp" alt="OncoDoc screen 3" />
+          </div>
+          <div class="cinema-main">
+            <img src="assets/oncodoc/unnamed.webp" alt="OncoDoc main screen" />
+          </div>
+          <div class="cinema-side cinema-right">
+            <img src="assets/oncodoc/unnamed%20(1).webp" alt="OncoDoc screen 2" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━ SLIDE 4  RECONET ━━━━━━━━━━━━━━ -->
+    <section class="slide" id="reconet">
+      <div class="inner proj-inner">
+
+        <div class="proj-info-col">
+          <p class="proj-idx fade">03 / 04</p>
+          <h2 class="proj-title fade delay-1">Reconet</h2>
+          <p class="proj-tag fade delay-2">ISP Management · Flutter · Node.js</p>
+
+          <p class="proj-desc fade delay-3">
+            Official mobile app for <strong>ISP customers</strong> to
+            monitor and manage their internet service directly from
+            their smartphone — subscriptions, billing, speed monitoring,
+            support tickets, hotspot vouchers, and promo claims.
+          </p>
+
+          <ul class="feat-list fade delay-4">
+            <li>
+              <span class="fn">Real-time monitoring</span>
+              <span class="fv">Speed, packet usage, uptime &amp; last connection</span>
+            </li>
+            <li>
+              <span class="fn">Billing &amp; payments</span>
+              <span class="fv">Subscription details &amp; monthly invoice history</span>
+            </li>
+            <li>
+              <span class="fn">Support tickets</span>
+              <span class="fv">Raise issues &amp; track repair status in real-time</span>
+            </li>
+            <li>
+              <span class="fn">Voucher &amp; promo</span>
+              <span class="fv">Instant hotspot vouchers &amp; exclusive discounts</span>
+            </li>
+          </ul>
+
+          <div class="proj-meta fade delay-5">
+            <div class="meta-pill">Flutter</div>
+            <div class="meta-pill">Node.js Backend</div>
+            <div class="meta-pill">Android</div>
+          </div>
+
+          <div class="store-row fade delay-6">
+            <a href="https://play.google.com/store/apps/details?id=com.reconetapp.reconet&hl=id"
+               target="_blank" rel="noopener noreferrer" class="store-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M3 20.5v-17c0-.83 1-.92 1.4-.42l13 8.5c.35.23.35.77 0 1L4.4 20.92C4 21.42 3 21.33 3 20.5z"/></svg>
+              Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- Cinema screenshots — 2 images: center + right -->
+        <div class="cinema cinema-duo fade delay-2">
+          <div class="cinema-main">
+            <img src="assets/reconet/unnamed%20(2).webp" alt="Reconet main screen" />
+          </div>
+          <div class="cinema-side cinema-right">
+            <img src="assets/reconet/unnamed%20(3).webp" alt="Reconet screen 2" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━ SLIDE 5  PRESENSIKU ━━━━━━━━━━━━━━ -->
+    <section class="slide" id="presensiku">
+      <div class="inner proj-inner">
+
+        <div class="proj-info-col">
+          <p class="proj-idx fade">04 / 04</p>
+          <h2 class="proj-title fade delay-1">Presensiku</h2>
+          <p class="proj-tag fade delay-2">Productivity · Flutter · Node.js</p>
+
+          <p class="proj-desc fade delay-3">
+            Attendance application built for employees of
+            <strong>Dian Nuswantoro University (Udinus)</strong>.
+            Enables staff to record their attendance directly from
+            their smartphone with a streamlined, minimal flow.
+          </p>
+
+          <ul class="feat-list fade delay-4">
+            <li>
+              <span class="fn">Digital attendance</span>
+              <span class="fv">Clock in &amp; out from smartphone</span>
+            </li>
+            <li>
+              <span class="fn">Employee-focused</span>
+              <span class="fv">Tailored for Udinus staff workflow</span>
+            </li>
+            <li>
+              <span class="fn">Attendance history</span>
+              <span class="fv">View and track personal attendance records</span>
+            </li>
+            <li>
+              <span class="fn">Simple interface</span>
+              <span class="fv">Minimal steps from open to check-in</span>
+            </li>
+          </ul>
+
+          <div class="proj-meta fade delay-5">
+            <div class="meta-pill">Flutter</div>
+            <div class="meta-pill">Node.js Backend</div>
+            <div class="meta-pill">iPhone + Android</div>
+          </div>
+
+          <div class="store-row fade delay-6">
+            <a href="https://apps.apple.com/us/app/presensiku-udinus/id1669915694"
+               target="_blank" rel="noopener noreferrer" class="store-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.dinustek.presensiku&hl=id"
+               target="_blank" rel="noopener noreferrer" class="store-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M3 20.5v-17c0-.83 1-.92 1.4-.42l13 8.5c.35.23.35.77 0 1L4.4 20.92C4 21.42 3 21.33 3 20.5z"/></svg>
+              Google Play
+            </a>
+          </div>
+        </div>
+
+        <!-- Cinema screenshots -->
+        <div class="cinema fade delay-2">
+          <div class="cinema-side cinema-left">
+            <img src="assets/presensiku/460x996bb%20(2).webp" alt="Presensiku screen 3" />
+          </div>
+          <div class="cinema-main">
+            <img src="assets/presensiku/460x996bb.webp" alt="Presensiku main screen" />
+          </div>
+          <div class="cinema-side cinema-right">
+            <img src="assets/presensiku/460x996bb%20(1).webp" alt="Presensiku screen 2" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ━━━━━━━━━━━━━━ SLIDE 6  CONTACT ━━━━━━━━━━━━━━ -->
+    <section class="slide" id="contact">
+      <div class="inner">
+
+        <div class="contact-wrap">
+          <p class="label fade">Let's Connect</p>
+          <h2 class="contact-heading fade delay-1">
+            OPEN TO NEW<br>OPPORTUNITIES.
+          </h2>
+          <p class="contact-sub fade delay-2">
+            Flutter development, freelance projects, or anything interesting —<br>
+            reach out and let's talk.
+          </p>
+
+          <div class="contact-links fade delay-3">
+            <a href="mailto:dhevanthareza@gmail.com" class="cl">
+              <span class="cl-label">Email</span>
+              <span class="cl-val">dhevanthareza@gmail.com</span>
+              <span class="cl-arr">↗</span>
+            </a>
+            <a href="https://github.com/dhevanthareza" target="_blank" rel="noopener noreferrer" class="cl">
+              <span class="cl-label">GitHub</span>
+              <span class="cl-val">github.com/dhevanthareza</span>
+              <span class="cl-arr">↗</span>
+            </a>
+            <a href="https://linkedin.com/in/dhevanthareza" target="_blank" rel="noopener noreferrer" class="cl">
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-val">linkedin.com/in/dhevanthareza</span>
+              <span class="cl-arr">↗</span>
+            </a>
+          </div>
+
+          <p class="footer-note fade delay-4">Dhevanthareza · Software Developer · 2024</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
